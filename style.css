@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: rgba(125, 118, 118, 0.7);
+}
+
+nav {
+  display: grid;
+  grid-template-areas: "nl ..  nr";
+  align-items: center;
+  background-color: #34829b;
+  border-radius: 0 0 5px 5px;
+}
+
+nav > * {
+  padding: 5px;
+  position: relative;
+}
+
+.nav-right {
+  grid-area: nr;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 10px;
+}
+
+.logo {
+  font: bold 1.5em "Delicious Handrawn", cursive;
+}
+
+.nav-right > * {
+  font: 1.2em arial;
+}
+
+.motto {
+  position: relative;
+  height: 65vh;
+  display: flex;
+  background-image: url(https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.motto > div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 65vh;
+  width: 100%;
+}
+
+.motto-text h1 {
+  color: rgb(92, 186, 223);
+  font: bold 4em Alkatra, cursive;
+  justify-content: center;
+}
+
+.programs-heading {
+  padding: 20px;
+  font: bold 2em Arial;
+}
+
+.container-programs {
+  display: flex;
+}
+
+.container-items-programs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 33vw;
+  margin: 10px;
+  border-radius: 20px;
+  background: #32594a;
+}
+
+.container-items-programs p {
+  justify-content: center;
+  font: bold 4em "Rubik", sans-serif;
+}
+
+.programs-csit p {
+  padding: 10vw;
+}
+.testimonials {
+  margin: 20px;
+}
+.testimonials-heading {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font: bold 2em Arial;
+}
+
+.testimonial-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  justify-content: space-between;
+}
+.testimonial-image {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: 180px;
+  width: 150px;
+  border-radius: 150px;
+}
+
+.testimonial-texts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  justify-content: space-around;
+}
+
+.testimonial-texts > * {
+  font: normal 1em Arial;
+  padding: 10px;
+  margin: 5px;
+}
+
+/* FOOTER SECTION:  */
+.tayari-footer {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #1e1e3e;
+  color: white;
+  font-family: "Akshar", sans-serif;
+}
+
+.tayari-footer > * {
+  margin: 10px;
+}
+
+.footer-container-one {
+  grid-column: 1/3;
+}
+.tayari-footer h3 {
+  margin-bottom: 10px;
+  padding: 2px;
+  text-decoration: underline;
+}
+
+.tayari-footer p {
+  margin: 10px;
+  width: 40vw;
+}
+
+.footer-container-two {
+  padding-left: 50px;
+}
